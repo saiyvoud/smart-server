@@ -6,7 +6,6 @@ import "./config/db.js"
 import router from "./router/index.js";
 import fileUpload from "express-fileupload";
 const app = express();
-
 app.use(cors());
 app.use(bodyParser.json({ extended: true }));
 app.use(
