@@ -26,7 +26,7 @@ const UploadImage = async (files,filename, oldImage) => {
    const base64 = files.toString("base64");
     const imgPath = `data:image/jpeg;base64,${base64}`;
     const cloudinaryUpload = await cloudinary.uploader.upload(imgPath, {
-      public_id: `IMG_${Date.now()}`,
+      public_id: filename,
       resource_type: "auto",
     });
     return cloudinaryUpload.url;
