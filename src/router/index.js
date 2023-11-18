@@ -1,5 +1,4 @@
 import express from "express";
-import CategoryController from "../controller/category.controller.js";
 import ProductController from "../controller/product.controller.js";
 import UserController from "../controller/user.controller.js";
 import { auth } from "../middleware/auth.js";
