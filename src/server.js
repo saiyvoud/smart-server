@@ -12,6 +12,7 @@ app.use(
   bodyParser.urlencoded({ extended: true, parameterLimit: 500, limit: "500mb" }),
 );
 app.use(fileUpload());
+
 app.use("/api",router);
 app.listen(PORT,() => {
   console.log(`Server is running on http://localhost:${PORT}`);
